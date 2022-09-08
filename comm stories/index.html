@@ -160,9 +160,13 @@ function findPos(obj)//finding position on clicked button
         }
     }
 }
-/*$(window).resize(function(){///hide if resized
-     $(".popup-overlay").hide();
-});*/
+$(window).resize(function(){///hide if resized
+    //$(".popup-overlay, .popup-content").hide();
+    $(".popup-overlay, .popup-content").removeClass("active");//removes the active extension when resize meaning it will 
+    //give a value of false when resize so the ready button will be clickable again
+    $(".btn").css({visibility: "visible"});//button read more will be visible when resize if the content is open or not
+    $(".popup-content, popup-overlay").css({position: "fixed"});
+  });
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
 $(".close, .popup-overlay").on("click", function() {
