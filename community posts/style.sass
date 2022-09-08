@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap')
+$white: #fff
+$container-width: 1200px
+$container-margin: 00.75rem
+$margin-y: 20px
+$btn-color: #283883
+$dot-color: #134175
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    font-family: 'IBM Plex Sans', sans-serif
+    font-size: 18px
+    line-height: 1.5
+    background: $white
+    margin-bottom: $margin-y + 30px
+
+header
+    margin-top: $margin-y
+
+.container, .grid-container
+    // border: 2px solid black
+    max-width: $container-width
+    margin: 0 auto
+
+    h1
+        padding-left: $container-margin
+        font-weight: 300
+
+        .bolded
+            font-weight: 700
+
+.grid-container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    justify-content: center
+
+    .card
+        // border: 2px solid black
+        // max-width: 24rem
+        margin: $container-margin
+
+        .photo
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 255px
+            background: linear-gradient(180deg, #dedde4, #343b5b)
+            margin-bottom: 25px
+
+            .fa-regular
+                opacity: 0.75 /* Opacity (Transparency) */
+                color: rgba(0, 0, 0, 0.75) /* RGBA Color (Alternative Transparency) */
+
+            .dots
+                display: flex
+                position: relative
+                top: 70px
+
+                .dot
+                    height: 8px
+                    width: 8px
+                    background-color: #fff
+                    border-radius: 50%
+                    margin: 0 8px
+
+                .dot:nth-of-type(2)
+                    background-color: $dot-color
+
+        .post-title
+            font-size: 16px
+            margin-bottom: 20px
+
+        .text-content
+            font-size: large
+            font-weight: 500
+            padding-bottom: 20px
+
+        .readbtn
+            background: $btn-color
+            width: fit-content
+            padding: 12px 20px
+
+            .read-more
+                font-size: 16px
+                color: $white
+                text-decoration: none
+                font-weight: 400
+
+                i
+                    margin-left: 50px
+
+        .break hr
+            visibility: hidden
+
+    // make layout responsive on all devices
+    @media(max-width: 992px)
+        grid-template-columns: repeat(2, 1fr)
+
+    @media(max-width: 576px)
+        grid-template-columns: repeat(1, 1fr)
+
+        // thematic break only shows during small screen
+        .card .break hr
+            margin-top: 10px
+            visibility: visible
+
+.popup
+    display: none
+
+    .card
+        background: #fff
+        max-width: 450px
+        // box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3)
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+        border-radius: 5px
+        padding: 30px
+        // margin: $container-margin
+
+        .exit-btn
+            text-align: end
+            color: yellowgreen
+
+            i
+                cursor: pointer
+
+        .photo
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 255px
+            background: linear-gradient(180deg, #dedde4, #343b5b)
+            margin-bottom: 25px
+            margin-top: 20px
+
+            .fa-regular
+                opacity: 0.75 /* Opacity (Transparency) */
+                color: rgba(0, 0, 0, 0.75) /* RGBA Color (Alternative Transparency) */
+
+            .dots
+                display: flex
+                position: relative
+                top: 70px
+
+                .dot
+                    height: 8px
+                    width: 8px
+                    background-color: #fff
+                    border-radius: 50%
+                    margin: 0 8px
+
+                .dot:nth-of-type(2)
+                    background-color: $dot-color
+
+        .post-title
+            font-size: 16px
+            margin-bottom: 20px
+
+        .text-content
+            font-size: large
+            font-weight: 500
+            padding-bottom: 20px
+
+footer.container
+    padding-left: 5px
+    margin-top: 10px
+    // margin-bottom: $margin-y
+
+.pagination_section a
+    color: black
+    text-decoration: none
+    padding: 5px
+
+    &:nth-of-type(3)
+        font-size: 16px
+
+    &:nth-of-type(9)
+        padding: 0 5px
+        color: blue
+        border: 2px solid blue
