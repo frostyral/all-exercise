@@ -132,7 +132,6 @@
         transition: transform .4s;
         text-align: left;
         top: 10px;
-        
         margin-bottom: 40px;
     }
     // Featured Post/Community Header
@@ -153,11 +152,13 @@
         background-color: orange;
         transform: scale(1.1);
       }
+
+    .story_image {
+        height: 400px;
+        width: 100%;
+    }
     
 }  
-
-  
-.hero 
   
 .content a i{
     font-size: 22px;
@@ -293,3 +294,59 @@
   }
 }
 
+
+
+@media only screen and ( max-width: 1024px  ){
+
+  .hero{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 40px ;
+  }
+
+.content{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  h1{
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .news{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center
+  }
+  .card{
+    margin-top: 20px;
+  }
+  a{
+    margin-bottom: 20px;
+  }
+  
+}
+
+  .container{
+    //margin: 0 auto;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    max-height: 700px;
+  }
+}
+
+    
