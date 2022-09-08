@@ -209,7 +209,7 @@
   visibility: hidden;
   border: solid 1px #c4b6b6;
   width: 10%;
-  position: absolute;
+  position: relative;
   font-size: 2px;
   left: 10px;
   bottom: 55px;
