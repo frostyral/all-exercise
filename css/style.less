@@ -1,6 +1,6 @@
 //cl code
 .fontStyle{
-    font-family: IBM plex Sans;
+    font-family: sans-serif;
     font-size: 14px;
     font-weight: none;
 }
@@ -77,136 +77,151 @@
 
 }
 
-// jeralh code
+
+
+
+
+
+
+
+
+
+
+/* Jehral Code Start*/
+
 .hero{
     justify-content: center;
-    font-family: sans-serif;
     display: flex;
     flex-direction: row;
-}
+  }
 
-.hero h1{
-    justify-content: left;
-    color: black;
+.content{
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    h1{
+        justify-content: left;
+        color: black;
+        font-size: 38px;
+        padding-top: 5%;
+        padding-bottom: 20px;
+        
+    }
+    p{
+        position: relative;
+        bottom: 10px;
+        line-height: 20px;
+        font-size: 18px;
+        color: black;
+        padding-top: 20px;
+    }
+    span{
+        font-weight: lighter;
+        font-size: 38px;
+    }  
+    a{
+        width: 180px;
+        position: relative;
+        background-color: #283883;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: lighter;
+        padding: 10px 35px 12px 15px;
+        transition: transform .4s;
+        text-align: left;
+        top: 10px;
+        
+        margin-bottom: 40px;
+    }
+    // Featured Post/Community Header
+    h2{
+        position: relative;
+        bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 23px;
+        font-weight: bold;
+      }
+    h3{
+        color: black;
+        font-size: 25px;
+       
+    }
+    .btn:hover {
+        background-color: orange;
+        transform: scale(1.1);
+      }
     
-    font-size: 38px;
-}
+}  
 
-.hero a{
-    width: 180px;
-    flex: row;
-    flex-direction: row;
-    position: relative;
-    bottom: 20px;
-    background-color: #283883;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: lighter;
-    padding: 15px 35px 15px 15px;
-    transition: transform .4s;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
+  
+.hero 
+  
 .content a i{
     font-size: 22px;
     position: relative;
     left: 45px;
     top: 3px;
 }
+  
+  
 
-.content{
-    max-width: 650px;
-    display: flex;
-    flex-direction: column;
-}
-
-.content p{
-    width: 100%;
-}
-
-
-
-h2{
-    position: relative;
-    bottom: 10px;
-    font-weight: bold;
-
-}
-h3{
-    color: black;
-    font-size: 25px;
-   
-}
-span{
-    font-weight: lighter;
-}
-
-p{
-    position: relative;
-    bottom: 10px;
-    line-height: 20px;
-    font-size: 18px;
-}
-
-
-.btn:hover{
-    background-color: orange;
-    transform: scale(1.1);
-}
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  /* Jehral Code End*/
 
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
+
+
 .slideshow-container {
-  max-width: 750px;
-  max-height: 700px;
-}
-
-
-.mySlides {display: none}
-
-
-
-.story_image{
-    height: 450px;
+    max-width: 800px;
+    max-height: 700px;
+  }
+  .mySlides {
+    display: none;
+  }
+  .story_image {
+    height: 400px;
     width: 100%;
-}
-
-.dots{
+  }
+  .dots {
     bottom: 50px;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin-right: 15px;
-  background-color: white;
-  border-radius: 50%;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: orange;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+  }
+  .active,
+  .dot:hover {
+    background-color: orange;
+  }
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
