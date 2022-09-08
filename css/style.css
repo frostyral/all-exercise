@@ -16,8 +16,8 @@
   box-sizing: border-box;
 }
 .container {
-  width: 30%;
-  margin-top: 50px;
+  width: 40%;
+  margin-top: 91px;
   padding: 0px 20px;
 }
 .container ul ul {
@@ -28,22 +28,21 @@
 }
 .container ul ul li h5 {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
   color: gray;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .container ul ul li p {
-  font-size: 14px;
+  font-size: 16px;
   color: #524f4f;
   font-weight: bold;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 .container ul ul li a {
   color: #7878f1;
-  font-size: 14px;
+  font-size: 16px;
   user-select: pointer;
   background: none;
-  padding: 0px 0px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -51,20 +50,23 @@
   color: #7878f1;
   font-size: 20px;
   position: relative;
-  left: 5px ;
+  left: 16px ;
   top: 4px;
   user-select: pointer;
 }
 .container ul ul li a:hover {
   color: #7878f1;
   position: relative;
-  left: 5px;
+  left: 10px;
   transition: all 0.3s ease-in-out;
-  font-size: 16px;
+  font-size: 18px;
+}
+.container ul ul li a:hover i {
+  font-size: 24px;
 }
 .container li h1 {
-  font-size: 25px;
-  font-weight: 10;
+  font-size: 30px;
+  font-weight: 100;
 }
 /* Jehral Code Start*/
 .hero {
