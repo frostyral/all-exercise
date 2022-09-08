@@ -69,10 +69,6 @@
   font-weight: 100;
 }
 /* Jehral Code Start*/
-html,
-body {
-  overflow-x: hidden;
-}
 .hero {
   justify-content: center;
   display: flex;
@@ -210,35 +206,20 @@ body {
 }
 .popup-overlay .popup-content {
   /*Hides pop-up content when there is no "active" class */
-  visibility: hidden;
+  visibility: visible;
   border: solid 1px #c4b6b6;
-  width: 10%;
-  position: relative;
-  font-size: 2px;
+  width: 400px;
+  position: fixed;
+  font-size: 5px;
   left: 10px;
-  bottom: 55px;
   background-color: white;
   box-shadow: 0px 0px 10px gray;
-}
-.popup-overlay .close {
-  font-size: 20px;
-  width: 20%;
-  position: relative;
-  left: 630px;
-  top: 10px;
-  background-color: transparent;
-  border: none;
-  user-select: none;
-}
-.popup-overlay .close:hover {
-  font-size: 21px;
-  color: red;
 }
 .popup-overlay .popup-content.active {
   /*Shows pop-up content when "active" class is present */
   visibility: visible;
   border: solid 1px #c4b6b6;
-  width: 50%;
+  width: 400px;
   position: relative;
   left: 20px;
   background-color: white;
@@ -254,6 +235,29 @@ body {
 .popup-overlay a {
   text-decoration: none;
   color: #111;
+}
+.popup-overlay .modal-cont {
+  position: relative;
+  margin-top: -5%;
+}
+.popup-overlay .modal-cont p span {
+  font-weight: 800;
+}
+.popup-overlay .modal-cont .modal {
+  padding: 0px 10px;
+  position: relative;
+}
+.popup-overlay .modal-cont .modal .close {
+  position: relative;
+  left: 95%;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  user-select: pointer;
+}
+.popup-overlay .modal-cont .modal .close:hover {
+  font-size: 21px;
+  color: red;
 }
 @media only screen and (max-width: 1024px) {
   .hero {
@@ -300,5 +304,16 @@ body {
   .slideshow-container {
     max-width: 100%;
     max-height: 700px;
+  }
+  .popup-overlay .popup-content.active {
+    /*Shows pop-up content when "active" class is present */
+    width: 200px;
+    margin-top: -1000px;
+  }
+  .popup-overlay .popup-content.active .modal-cont {
+    font-size: 10px;
+  }
+  .popup-overlay .popup-content.active .modal-cont .modal .close {
+    left: 80%;
   }
 }

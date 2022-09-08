@@ -85,66 +85,69 @@
             </ul>
         </section>
     </div>
-
-    
-<script> //slideshow 
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-    }
-    </script>
-    <!--Creates the popup body-->
+<!--Creates the popup body-->
 <div class="popup-overlay" id="show">
     <!--Creates the popup content-->
-    <div class="popup-content">
-      <a href="#" class="close">X</a> 
+    <div class="popup-content"> 
       <p>
-        <div class="hero">
-        <div class="content">
-          <h1>Community<span> Stories</span></h1>     
-        Orci etiam suspendisse amet tincidunt lacus, enim, maecenas urna, nisl. Sit interdum sapien, 
-        tincidunt convallis nisl. Sit interdum sapien, tincidunt convallis nisi senectus fringilla turpis aliquet. 
-        Nibh pharetra, ac rhoncus placerat non proin purus est libero. Lacinia amet eros 
-        pharetra, turpis consequat, nunc auctor. 
-        Donec ullamcorper lectus id pellentesque. Sem diam viverra nunc amet convallis integer pellentesque.
-    </p>
-      <!--popup's close button-->
+        <div class="modal-cont">
+            <div class="modal">
+              <a href="#" class="close">X</a> <!--popup's close button-->
+              <p><em>
+                <span>Detailed Information</span><br>
+                Orci etiam suspendisse amet tincidunt lacus, enim, maecenas urna, nisl. Sit interdum 
+                sapien, tincidunt convallis nisl. Sit interdum sapien, tincidunt convallis nisi senectus 
+                fringilla turpis aliquet. Nibh pharetra, ac rhoncus placerat non proin purus est libero. 
+                Lacinia amet eros pharetra, turpis consequat, nunc auctor. 
+                Donec ullamcorper lectus id pellentesque. Sem diam viverra nunc amet convallis integer pellentesque
+              </em></p>
+            </div>
+        </div>
     </div>
   </div>
 </body>
 </html>
+    
+<script> //slideshow 
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+      showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+  }
+  </script>
 <!--Read more pop-up-->
 <script>
     //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
 $(".btn").on("click", function() {
   $(".popup-overlay, .popup-content").addClass("active");
+  $(".btn").css({visibility: "hidden"});
   Pos = findPos(this);//adjust sa pag align
         let Left = Pos[0] - 10;
         let Top = Pos[1]  - 900;
         $(".popup-content").css({position: "relative", left: Left, top: Top});
 });
+
 function findPos(obj)//finding position on clicked button
 {
     let curleft = (curtop = 0);
@@ -157,11 +160,16 @@ function findPos(obj)//finding position on clicked button
         }
     }
 }
+/*$(window).resize(function(){///hide if resized
+     $(".popup-overlay").hide();
+});*/
+
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
 $(".close, .popup-overlay").on("click", function() {
   //$("popup-overlay, .popup-content").css({p:{
     //bottom: "200px"
   //}});//display bug
+  $(".btn").css({visibility: "visible"});
   $(".popup-overlay, .popup-content").removeClass("active");
   Pos = findPos(this);//adjust sa pag align
         let Left = Pos[0] - 10;

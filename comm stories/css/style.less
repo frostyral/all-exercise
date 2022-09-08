@@ -90,11 +90,6 @@
 
 /* Jehral Code Start*/
 
-
-html,body{
-  overflow-x: hidden;
-}
-
 .hero{
     justify-content: center;
     display: flex;
@@ -252,35 +247,20 @@ html,body{
   
   .popup-content {
     /*Hides pop-up content when there is no "active" class */
-    visibility: hidden;
+    visibility: visible;
     border: solid 1px rgb(196, 182, 182);
-    width: 10%;
-    position: relative;
-    font-size: 2px;
+    width: 400px;
+    position: fixed;
+    font-size: 5px;
     left: 10px;
-    bottom: 55px;
     background-color: white;
     box-shadow: 0px 0px 10px gray;
-  }
-  .close{
-    font-size: 20px;
-    width: 20%;
-    position: relative;
-    left: 630px;
-    top: 10px;
-    background-color: transparent;
-    border: none;
-    user-select: none;
-  }
-  .close:hover{
-    font-size: 21px;
-    color: red;
   }
   .popup-content.active {
     /*Shows pop-up content when "active" class is present */
     visibility: visible;
     border: solid 1px rgb(196, 182, 182);
-    width: 50%;
+    width: 400px;
     position: relative;
     left: 20px;
     background-color: white;
@@ -296,6 +276,33 @@ html,body{
   a{
     text-decoration: none;
     color: #111;
+  }
+  .modal-cont{
+   // border: solid 1px black;
+    position: relative;
+    margin-top: -5%;
+    p{
+      span{
+        font-weight: 800;
+      }
+    }
+    .modal{
+      padding: 0px 10px;
+      position: relative;
+      .close{
+        position: relative;
+        left: 95%;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+        user-select: pointer;
+
+      }
+      .close:hover{
+        font-size: 21px;
+        color: red;
+      }
+    }
   }
 }
 
@@ -351,6 +358,20 @@ html,body{
   .slideshow-container {
     max-width: 100%;
     max-height: 700px;
+  }
+  .popup-overlay {
+    .popup-content.active{      /*Shows pop-up content when "active" class is present */
+      width: 200px;
+      margin-top: -1000px;
+    .modal-cont{
+      font-size: 10px;
+       .modal{
+         .close{
+           left: 80%;
+         }
+       }
+     }
+  }
   }
 }
 
