@@ -39,7 +39,7 @@
   padding: 10px 0px;
 }
 .container ul ul li a {
-  color: #7878f1;
+  color: #283883;
   font-size: 16px;
   user-select: pointer;
   background: none;
@@ -47,7 +47,7 @@
   text-decoration: none;
 }
 .container ul ul li a i {
-  color: #7878f1;
+  color: #283883;
   font-size: 20px;
   position: relative;
   left: 16px ;
@@ -300,10 +300,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .slideshow-container {
-    max-width: 100%;
-    max-height: 700px;
   }
   .popup-overlay .popup-content.active {
     /*Shows pop-up content when "active" class is present */
