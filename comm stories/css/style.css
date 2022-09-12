@@ -50,7 +50,7 @@
   color: #283883;
   font-size: 20px;
   position: relative;
-  left: 16px ;
+  left: 16px;
   top: 4px;
   user-select: pointer;
 }
@@ -268,7 +268,7 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding-bottom: 40px ;
+    padding-bottom: 40px;
   }
   .content {
     max-width: 100%;
@@ -294,14 +294,6 @@
   .content a {
     margin-bottom: 20px;
   }
-
-  .story_image{
-    object-fit: cover;
-  }
-  .slideshow-container{
-    width: 100%;
-  }
-
   .container {
     width: 100%;
     margin-top: 10px;
