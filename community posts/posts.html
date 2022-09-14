@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
 
     <!-- font-awesome -->
     <link
@@ -12,271 +13,196 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       type="text/css"
     />
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <!-- css -->
-    <!-- css -->
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Community Posts</title>
-
-    <!-- jquery cdn script -->
+    <!-- jquery cdn -->
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
+
+    <!-- slick css cdn  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Community Posts</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header container">
         <h1><span class="bolded">Community</span> Posts</h1>
       </div>
     </header>
 
-    <!-- start of section -->
-    <section class="cards">
-      <div class="grid-container">
-        <div class="card">
-          <div class="photo">
-            <i class="fa-regular fa-image fa-4x"></i>
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="post-title">
-            <h2>Post/Community Header</h2>
-          </div>
-          <div class="text-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-            vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam
-            possimus est in delectus et hic laboriosam, quidem modi. Dicta, est
-            debitis!
-          </div>
-          <div class="readbtn">
-            <a href="#" class="read-more"
-              >Read More<i class="fa-solid fa-arrow-right-long"></i
-            ></a>
-          </div>
-          <!-- thematic break only shows if screen resolution is small -->
-          <div class="break">
-            <hr />
-          </div>
+    <section id="cards">
+        <div class="grid-container">
+            <!-- to be appended using javascript -->
         </div>
-        <div class="card">
-          <div class="photo">
-            <i class="fa-regular fa-image fa-4x"></i>
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="post-title">
-            <h2>Post/Community Header</h2>
-          </div>
-          <div class="text-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-            vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam
-            possimus est in delectus et hic laboriosam, quidem modi. Dicta, est
-            debitis!
-          </div>
-          <div class="readbtn">
-            <a href="#" class="read-more"
-              >Read More<i class="fa-solid fa-arrow-right-long"></i
-            ></a>
-          </div>
-          <!-- thematic break only shows if screen resolution is small -->
-          <div class="break">
-            <hr />
-          </div>
-        </div>
-        <div class="card">
-          <div class="photo">
-            <i class="fa-regular fa-image fa-4x"></i>
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="post-title">
-            <h2>Post/Community Header</h2>
-          </div>
-          <div class="text-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-            vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam
-            possimus est in delectus et hic laboriosam, quidem modi. Dicta, est
-            debitis!
-          </div>
-          <div class="readbtn">
-            <a href="#" class="read-more"
-              >Read More<i class="fa-solid fa-arrow-right-long"></i
-            ></a>
-          </div>
-          <!-- thematic break only shows if screen resolution is small -->
-          <div class="break">
-            <hr />
-          </div>
-        </div>
-        <div class="card">
-          <div class="photo">
-            <i class="fa-regular fa-image fa-4x"></i>
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="post-title">
-            <h2>Post/Community Header</h2>
-          </div>
-          <div class="text-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-            vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam
-            possimus est in delectus et hic laboriosam, quidem modi. Dicta, est
-            debitis!
-          </div>
-          <div class="readbtn">
-            <a href="#" class="read-more"
-              >Read More<i class="fa-solid fa-arrow-right-long"></i
-            ></a>
-          </div>
-          <!-- thematic break only shows if screen resolution is small -->
-          <div class="break">
-            <hr />
-          </div>
-        </div>
-        <div class="card">
-          <div class="photo">
-            <i class="fa-regular fa-image fa-4x"></i>
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="post-title">
-            <h2>Post/Community Header</h2>
-          </div>
-          <div class="text-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-            vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam
-            possimus est in delectus et hic laboriosam, quidem modi. Dicta, est
-            debitis!
-          </div>
-          <div class="readbtn">
-            <a href="#" class="read-more"
-              >Read More<i class="fa-solid fa-arrow-right-long"></i
-            ></a>
-          </div>
-          <!-- thematic break only shows if screen resolution is small -->
-          <div class="break">
-            <hr />
-          </div>
-        </div>
-        <div class="card">
-          <div class="photo">
-            <i class="fa-regular fa-image fa-4x"></i>
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-          <div class="post-title">
-            <h2>Post/Community Header</h2>
-          </div>
-          <div class="text-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-            vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam
-            possimus est in delectus et hic laboriosam, quidem modi. Dicta, est
-            debitis!
-          </div>
-          <div class="readbtn">
-            <a href="#" class="read-more"
-              >Read More<i class="fa-solid fa-arrow-right-long"></i
-            ></a>
-          </div>
-          <!-- thematic break only shows if screen resolution is small -->
-          <div class="break">
-            <hr />
-          </div>
-        </div>
-
-      </div>
     </section>
-    <!-- end of section -->
 
-    <!-- popup card -->
-    <div class="popup">
-      <div class="card">
-        <p class="exit-btn">
-          <i id="x-btn" class="fa-sharp fa-solid fa-xmark"></i>
-        </p>
-        <div class="photo">
-          <i class="fa-regular fa-image fa-4x"></i>
-          <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-        <div class="post-title">
-          <h2>Post/Community Header</h2>
-        </div>
-        <div class="text-content">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vel
-          nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam possimus
-          est in delectus et hic laboriosam, quidem modi. Dicta, est debitis!
-          <br /><br />
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vel
-          nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam possimus
-          est in delectus et hic laboriosam, quidem modi. Dicta, est debitis!
-          <br /><br />
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vel
-          nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam possimus
-          est in delectus et hic laboriosam, quidem modi. Dicta, est debitis!
-        </div>
-      </div>
-    </div>
-
+    <!-- pagination -->
     <footer class="container">
-      <div class="pagination_section">
-        <a href="#">Showing</a>
-        <a href="#"> 1</a>
-        <a href="#">&#8744 of</a>
-        <a href="#">49</a>
-        <a href="#">   |   </a>
-        <a href="#">&#60 Previous</a>
-        <a href="#" title="First Page">1</a>
-        <a href="#" title="Second Page">2</a>
-        <a href="#" title="Third Page">3</a>
-        <a href="#" title="Fourth Page">4</a>
-        <a href="#" title="Fifth Page">5</a>
-        <a href="#">Next &#62</a>
-      </div>
+        <div class="pagination_section">
+            <a href="#">Showing</a>
+            <a href="#"> 1</a>
+            <a href="#">&#8744 of</a>
+            <a href="#">49</a>
+            <a href="#">   |   </a>
+            <a href="#">&#60 Previous</a>
+            <a href="#" title="First Page">1</a>
+            <a href="#" title="Second Page">2</a>
+            <a href="#" title="Third Page">3</a>
+            <a href="#" title="Fourth Page">4</a>
+            <a href="#" title="Fifth Page">5</a>
+            <a href="#">Next &#62</a>
+        </div>
 
     </footer>
 
-  <!-- javascript script -->
+    <!-- javascript script -->
     <script>
-      var Pos;
+      const data = {
+        image1: "imgs/sana.jpg",
+        image2: "imgs/sana2.jpg",
+        image3: "imgs/twice.jpg",
+        textContent: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam possimus est in delectus et hic laboriosam, quidem modi. Dicta, est debitis! <br /><br /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam possimus est in delectus et hic laboriosam, quidem modi. Dicta, est debitis! <br /><br /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vel nesciunt voluptas odit ipsam enim. Suscipit expedita aperiam possimus est in delectus et hic laboriosam, quidem modi. Dicta, est debitis!"
+      };
 
-      $(".read-more").click(function () {
+      const cardsElement = $(".grid-container");
+
+    //   append cards 6 times
+      for (let i = 0; i < 6; i++) {
+        const cardHTML = `
+        <div class="card">
+          <div class="photo">
+            <div class="slider">
+              <div><img src="${data.image1}" alt="Sana Twice"></div>
+              <div><img src="${data.image2}" alt="Sana 2 Twice"></div>
+              <div><img src="${data.image3}" alt="Twice"></div>
+            </div>
+          </div>
+          <div class="post-title">
+            <h2>Post/Community Header</h2>
+          </div>
+          <div class="text-content-card">
+            ${data.textContent}
+          </div>
+          <div class="readbtn ${i}">
+            <p class="read-more"
+              >Read More<i class="fa-solid fa-arrow-right-long"></i
+            ></p>
+          </div>
+          <!-- thematic break only shows if screen resolution is small -->
+
+          <div class="read-more-content">
+            <div class="card">
+                <p class="exit-btn">
+                    <i id="x-btn${i}" class="fa-sharp fa-solid fa-xmark"></i>
+                </p>
+                <div class="photo">
+                    <div class="slider">
+                    <div><img src="${data.image1}" alt="Sana Twice"></div>
+                    <div><img src="${data.image2}" alt="Sana 2 Twice"></div>
+                    <div><img src="${data.image3}" alt="Twice"></div>
+                    </div>
+                </div>
+                <div class="post-title">
+                    <h2>Post/Community Header</h2>
+                </div>
+                <div class="text-content">
+                    ${data.textContent}
+                </div>
+            </div>
+          </div>
+
+          <div class="break">
+            <hr />
+          </div>
+        </div>`;
+
+        cardsElement.append(cardHTML);
+      }
+
+    //   slideshow for images
+      $(document).ready(function(){
+        $('.slider').slick({
+          infinite: true,
+          dots: true,
+          arrows: false,
+          fade: true,
+          fadeSpeed: 1000
+        });
+      });
+
+    //   limit text-content to 250 characters
+      var max = 220;
+      var tot, str;
+      $('.text-content-card').each(function() {
+  	  str = String($(this).html());
+  	  tot = str.length;
+      str = (tot <= max) ? str : str.substring(0,(max + 1))+"...";
+      $(this).html(str);
+      });
+
+
+    //   read more button event listener
+      $(".readbtn.0, .readbtn.1, .readbtn.2, .readbtn.3, .readbtn.4, .readbtn.5").click(function () {
         Pos = findPos(this);
         var Left = Pos[0] - 50;
-        var Top = Pos[1] - 570;
+        var Top = Pos[1] - 500;
 
-        $(".popup").fadeIn(300);
-        $(".popup").css({ position: "absolute", left: Left, top: Top});
+        const cardParent = $(this).parent();
+        const readMoreContent = cardParent.children(".read-more-content")
+        
+        // hides an existing popup if readmore is clicked
+        if ($(".read-more-content") !== "none"){
+            $(".read-more-content").fadeOut(300)
+        }
+
+         // refresh slider when a popup appears
+        if (readMoreContent.css('display') == "none") {
+          $(cardParent.children().children().children().children(".slider")).slick("refresh");
+        }
+
+        if ($(window).width() > 935) {
+            readMoreContent.css({ position: "absolute", left: Left, top: Top});
+        }else if ($(window).width() > 790) {
+            readMoreContent.css({width: "100%", height: "100%", position: "absolute", top: Top, left: Left});
+            readMoreContent.children(".card").css({width: "50%"});
+        }else if ($(window).width() > 600) {
+            readMoreContent.css({width: "100%", height: "100%", position: "absolute", top: Top, left: Left});
+        }
+        else {
+            readMoreContent.css({width: "100%", height: "100%", position: "absolute", top: Top, left: 0});
+            readMoreContent.children(".card").css({maxWidth: "100%"});
+        }
+
+        readMoreContent.fadeIn(300)
       });
 
       // hide popup when x button is clicked
-      $("#x-btn").click(function () {
-        $(".popup").hide();
+      $("#x-btn0, #x-btn1, #x-btn2, #x-btn3, #x-btn4, #x-btn5").click(function () {
+        const exitParent = $(this).parent().parent().parent();
+        exitParent.fadeOut(300);
+
       });
 
       // function for finding position of clicked button
@@ -293,9 +219,8 @@
 
       // hide popup if window resizes
       $(window).resize(function () {
-        $(".popup").hide();
+        $(".read-more-content").hide();
       });
     </script>
-
   </body>
 </html>
