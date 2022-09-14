@@ -184,21 +184,18 @@
 
         if ($(window).width() > 935) {
             readMoreContent.css({ position: "absolute", left: Left, top: Top});
-            readMoreContent.fadeIn(300)
         }else if ($(window).width() > 790) {
             readMoreContent.css({width: "100%", height: "100%", position: "absolute", top: Top, left: Left});
             readMoreContent.children(".card").css({width: "50%"});
-            readMoreContent.fadeIn(300)
         }else if ($(window).width() > 600) {
             readMoreContent.css({width: "100%", height: "100%", position: "absolute", top: Top, left: Left});
-            readMoreContent.fadeIn(300)
         }
         else {
             readMoreContent.css({width: "100%", height: "100%", position: "absolute", top: Top, left: 0});
             readMoreContent.children(".card").css({maxWidth: "100%"});
-            readMoreContent.fadeIn(300)
         }
 
+        readMoreContent.fadeIn(300)
       });
 
       // hide popup when x button is clicked
