@@ -9,12 +9,6 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  background: #fff;
-  margin-bottom: 50px;
-}
-
-header {
-  margin-top: 20px;
 }
 
 .container, .grid-container {
@@ -68,7 +62,7 @@ header {
   font-size: 16px;
   margin-bottom: 20px;
 }
-.grid-container .card .text-content {
+.grid-container .card .text-content, .grid-container .card .text-content-card {
   font-size: large;
   font-weight: 500;
   padding-bottom: 20px;
@@ -80,13 +74,16 @@ header {
   width: fit-content;
   padding: 12px 20px;
 }
+.grid-container .card .readbtn:hover {
+  cursor: pointer;
+}
 .grid-container .card .readbtn .read-more {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
   font-weight: 400;
 }
-.grid-container .card .readbtn .read-more i {
+.grid-container .card .readbtn i {
   margin-left: 50px;
 }
 .grid-container .card .break hr {
@@ -114,64 +111,24 @@ header {
   .grid-container .card {
     width: 22rem;
   }
+  .grid-container .slick-dots {
+    top: 165px;
+  }
 }
-
-.popup {
-  display: none;
-}
-.popup .card {
-  background: #fff;
-  max-width: 450px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  padding: 30px;
-}
-.popup .card .exit-btn {
-  text-align: end;
-  color: yellowgreen;
-}
-.popup .card .exit-btn i {
-  cursor: pointer;
-}
-.popup .card .photo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 255px;
-  margin-bottom: 25px;
-  margin-top: 20px;
-}
-.popup .card .photo .slider div {
-  display: flex;
-  align-items: center;
-}
-.popup .card .photo .slider {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: inherit;
-  margin: auto;
-}
-.popup .card .photo .slider img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.popup .card .post-title {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.popup .card .text-content {
-  font-size: large;
-  font-weight: 500;
-  padding-bottom: 20px;
+@media (max-width: 350px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-container .card {
+    width: 19rem;
+  }
+  .grid-container .slick-dots {
+    top: 140px;
+  }
 }
 
 .slick-dots {
-  top: 225px;
+  top: 180px;
 }
 .slick-dots li.slick-active button:before {
   color: #134175 !important;
@@ -195,4 +152,59 @@ footer.container {
   padding: 0 5px;
   color: blue;
   border: 2px solid blue;
+}
+
+.read-more-content {
+  display: none;
+  z-index: 1;
+}
+.read-more-content .card {
+  background: #fff;
+  max-width: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 30px;
+}
+.read-more-content .card .exit-btn {
+  text-align: end;
+  color: yellowgreen;
+}
+.read-more-content .card .exit-btn i {
+  cursor: pointer;
+}
+.read-more-content .card .photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 255px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.read-more-content .card .photo .slider div {
+  display: flex;
+  align-items: center;
+}
+.read-more-content .card .photo .slider {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: inherit;
+  margin: auto;
+}
+.read-more-content .card .photo .slider img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.read-more-content .card .post-title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.read-more-content .card .text-content {
+  font-size: large;
+  font-weight: 500;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

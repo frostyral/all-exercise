@@ -15,14 +15,8 @@ body
     font-family: 'IBM Plex Sans', sans-serif
     font-size: 18px
     line-height: 1.5
-    background: $white
-    margin-bottom: $margin-y + 30px
-
-header
-    margin-top: $margin-y
 
 .container, .grid-container
-    // border: 2px solid black
     max-width: $container-width
     margin: 0 auto
 
@@ -72,7 +66,7 @@ header
             font-size: 16px
             margin-bottom: 20px
 
-        .text-content
+        .text-content, .text-content-card
             font-size: large
             font-weight: 500
             padding-bottom: 20px
@@ -82,14 +76,17 @@ header
             width: fit-content
             padding: 12px 20px
 
+            &:hover
+                cursor: pointer
+
             .read-more
                 font-size: 16px
                 color: $white
                 text-decoration: none
                 font-weight: 400
 
-                i
-                    margin-left: 50px
+            i
+                margin-left: 50px
 
         .break hr
             visibility: hidden
@@ -111,8 +108,45 @@ header
         .card
             width: 22rem
 
-.popup
+        .slick-dots
+            top: 165px
+
+    @media(max-width: 350px)
+        grid-template-columns: repeat(1, 1fr)
+
+        .card
+            width: 19rem
+
+        .slick-dots
+            top: 140px
+
+.slick-dots
+    top: 180px
+
+    li.slick-active button:before
+        color: $dot-color !important
+        font-size: 10px
+
+footer.container
+    padding-left: 5px
+    margin-top: 10px
+
+.pagination_section a
+    color: black
+    text-decoration: none
+    padding: 5px
+
+    &:nth-of-type(3)
+        font-size: 16px
+
+    &:nth-of-type(9)
+        padding: 0 5px
+        color: blue
+        border: 2px solid blue
+
+.read-more-content
     display: none
+    z-index: 1
 
     .card
         background: #fff
@@ -162,27 +196,3 @@ header
             font-size: large
             font-weight: 500
             padding-bottom: 20px
-
-.slick-dots
-    top: 225px
-
-    li.slick-active button:before
-        color: $dot-color !important
-        font-size: 10px
-
-footer.container
-    padding-left: 5px
-    margin-top: 10px
-
-.pagination_section a
-    color: black
-    text-decoration: none
-    padding: 5px
-
-    &:nth-of-type(3)
-        font-size: 16px
-
-    &:nth-of-type(9)
-        padding: 0 5px
-        color: blue
-        border: 2px solid blue
